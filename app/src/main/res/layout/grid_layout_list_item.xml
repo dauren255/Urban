@@ -25,7 +25,8 @@
             android:layout_toEndOf="@+id/icon_image"
             android:layout_toRightOf="@+id/icon_image"
             android:padding="10dp"
-            android:text="Asdasfsdgdf" />
+            android:text="Стул 1 М^3" />
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

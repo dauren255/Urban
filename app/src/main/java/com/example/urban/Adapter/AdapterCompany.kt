@@ -1,4 +1,4 @@
-package com.example.urban
+package com.example.urban.Adapter
 
 import android.content.Context
 import android.graphics.BitmapFactory
@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import java.io.File
+import com.bumptech.glide.Glide
+import com.example.urban.R
 
-class AdapterPhoto (var context: Context, var arrayList: ArrayList<File>) : RecyclerView.Adapter<AdapterPhoto.ItemHolder>()
+class AdapterCompany(var context: Context, var arrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterCompany.ItemHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
 
-        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.grid_layout_list_item, parent, false)
+        val itemHolder = LayoutInflater.from(parent.context).inflate(R.layout.company_item, parent, false)
         return ItemHolder(itemHolder)
     }
 
@@ -23,12 +24,10 @@ class AdapterPhoto (var context: Context, var arrayList: ArrayList<File>) : Recy
 
     override fun onBindViewHolder(holder: ItemHolder, position: Int) {
 
-        var file: File = arrayList.get(position)
-        val takenImage = BitmapFactory.decodeFile(file.absolutePath)
-        holder.icon.setImageBitmap(takenImage)
+        Glide.with(context).load(R.drawable.dhl).into(holder.icon)
     }
 
-    class ItemHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    class ItemHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var icon = itemView.findViewById<ImageView>(R.id.icon_image)
     }
 }

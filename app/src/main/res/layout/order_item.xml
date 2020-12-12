@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/list_item_background">
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/textFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From:" />
+
+    <LinearLayout
+        android:id="@+id/LinearForFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFrom"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/fromAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Momyshuly St. 24, Apt.\n143 Nur-Sultan, Kazakhstan"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/fromTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16:20\n3/01/2021"
+            android:layout_weight="6"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/textTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:layout_below="@+id/LinearForFrom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTo"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/LinearForTo">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/toAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Momyshuly St. 24, Apt.\n143 Nur-Sultan, Kazakhstan"
+            android:layout_weight="4"/>
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/toTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16:20\n3/01/2021"
+            android:layout_weight="6"
+            android:gravity="end" />
+    </LinearLayout>
+</RelativeLayout>
+

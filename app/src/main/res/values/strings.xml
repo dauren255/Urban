@@ -3,4 +3,16 @@
     <string name="title_activity_new_move">New Move</string>
     <string name="action_settings">Settings</string>
     <string name="google_place_api">AIzaSyBSerOkNcLxEAFuPsu2xSMkknphEk9i7m0</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZGF1cmVuYiIsImEiOiJja2d1bnp2ajkwbTBkMnRxcmR3ZzZpNXoyIn0.5SpfZCUtGfWZXukhamlsIg</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="testing_photo">Testing Photo</string>
+    <string name="newMove">New move</string>
+    <string name="become_a_driver">Become a Driver</string>
+    <string name="companiesWeWorkWith">Companies we work with:</string>
+    <string name="dashboardFirstText">Международная компания экспресс-доставки грузов, лидер мировых логистических рынков.</string>
+    <string name="dashboardPageSecondText">Перевози легко, быстро и без стресса!</string>
+    <string name="pickPlaces">Pick Places</string>
+    <string name="setPrice">Set Price</string>
 </resources>
