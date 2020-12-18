@@ -3,9 +3,10 @@ package com.example.urban.UI
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.urban.Adapter.AdapterPhoto
+import com.bumptech.glide.Glide
 import com.example.urban.Adapter.AdapterViewList
 import com.example.urban.R
 import com.example.urban.model.ViewListItem
@@ -18,10 +19,15 @@ class ViewList : AppCompatActivity() {
         setupViews()
     }
     fun setupViews(){
+        val accountImageView = findViewById<ImageView>(R.id.imageViewUser)
+        Glide.with(this).load(R.drawable.ic_launcher_background).into(accountImageView)
+
         val recyclerView = findViewById<RecyclerView>(R.id.view_list_recycler_view)
 
         val arrs = mutableListOf(
-            ViewListItem(R.drawable.account,"Настройки")
+            ViewListItem(R.drawable.settings_blue,"Настройки"),
+            ViewListItem(R.drawable.cards,"Мои карты")
+
         )
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter =

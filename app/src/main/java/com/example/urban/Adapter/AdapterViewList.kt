@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.urban.R
 import com.example.urban.model.ViewListItem
 import java.io.File
@@ -26,13 +27,13 @@ class AdapterViewList (var context: Context, var arrayList: MutableList<ViewList
     override fun onBindViewHolder(holder: ItemHolder, position: Int) {
 
         val item = arrayList.get(position)
-        holder.icon.setImageResource(item.iconName)
+        Glide.with(context).load(item.icon).into(holder.icon)
         holder.viewListItemName.text = item.itemname
     }
 
     class ItemHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        var icon = itemView.findViewById<ImageView>(R.id.view_list_icon_image)
-        var viewListItemName = itemView.findViewById<TextView>(R.id.view_list_item_name)
+        var icon = itemView.findViewById<ImageView>(R.id.viewListIconImage)
+        var viewListItemName = itemView.findViewById<TextView>(R.id.viewListItemName)
     }
 
 

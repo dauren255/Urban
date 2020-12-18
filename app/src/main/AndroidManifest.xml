@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.urban">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -10,8 +10,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
 
     <queries>
@@ -39,18 +39,18 @@
         <activity
             android:name=".UI.ViewList"
             android:noHistory="true" />
-        <activity
-            android:name=".UI.Dashboard" />
-        <activity
-            android:name=".UI.MainActivity"
-            android:noHistory="true">
+        <activity android:name=".UI.Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".UI.NewMovePickPlacesActivity" />
+            android:name=".UI.MainActivity"
+            android:noHistory="true"/>
+        <activity android:name=".UI.NewMovePickPlacesActivity" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.fileprovider"
@@ -63,9 +63,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_place_api"/>
-
-
+            android:value="@string/api_key" />
     </application>
 
 </manifest>
