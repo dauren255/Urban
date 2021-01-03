@@ -10,7 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.urban.R
 
-class AdapterCompany(var context: Context, var arrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterCompany.ItemHolder>()
+class
+AdapterCompany(var context: Context, var arrayList: ArrayList<String>) : RecyclerView.Adapter<AdapterCompany.ItemHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
 

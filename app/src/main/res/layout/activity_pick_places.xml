@@ -36,10 +36,8 @@
                     <fragment
                         android:id="@+id/autocompleteFrom"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
-                        android:drawableStart="@drawable/ic_a"
-                        android:drawableLeft="@drawable/ic_a"/>
+                        android:layout_height="wrap_content"
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />
                 </LinearLayout>
 
                 </LinearLayout>
@@ -65,18 +63,12 @@
                         android:layout_height="wrap_content"
                         android:text="@string/to" />
 
-                    <EditText
-                        android:id="@+id/textTo"
+                    <fragment
+                        android:id="@+id/autocompleteTo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/ic_b"
-                        android:drawableLeft="@drawable/ic_b" />
-                    
-<!--                    <fragment-->
-<!--                        android:id="@+id/autoComplete"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />-->
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />
+
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>
@@ -88,5 +80,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_button"
-        android:text="@string/setPrice" />
+        android:text="@string/nextPage" />
 </RelativeLayout>
